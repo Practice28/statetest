@@ -5,14 +5,18 @@ function Form() {
     const [fname, setFname] = useState(" ");
     const [age, setAge] = useState();
     const [users, setUsers] = useState([]);
-    const updateValue = e => {
+    const updateName = e => {
         console.log(e);
         setFname(e.target.value);
     }
+    const updateAge = e => {
+        console.log(e);
+        setAge(e.target.value);
+    }
     return (
         <div>
-            <input placeholder='name' onChange={updateValue} value={fname} ></input>
-            <input placeholder='age' onChange={updateValue} value={age} ></input>
+            <input placeholder='name' onChange={updateName} value={fname} ></input>
+            <input placeholder='age' onChange={updateAge} value={age} ></input>
             <button onClick={submit}>Save</button>
             <Counter>0</Counter>
         </div>
