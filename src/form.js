@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Counter from './counter/counter';
 
 function Form() {
-    const [fname, setFname] = useState(" ");
+    const [fname, setFname] = useState(" ");   
     const [age, setAge] = useState();
     const [users, setUsers] = useState([]);
     const updateName = e => {
